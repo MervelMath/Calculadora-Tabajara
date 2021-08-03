@@ -9,7 +9,6 @@ namespace CalcTabajara.ConsoleApp
             while (true)
             {
                
-                double operacao = Convert.ToDouble(Console.ReadLine());
                 Console.WriteLine("Primeiro número:");
                 double num1 = Convert.ToDouble(Console.ReadLine());
 
