@@ -14,8 +14,13 @@ namespace CalcTabajara.ConsoleApp
             Console.WriteLine("Digite 2 para subtração: ");
             double operacao = Convert.ToDouble(Console.ReadLine());
 
+            double resultado;
+
             switch (operacao)
             {
+                case 1:
+                    resultado = num1 + num2;
+                    break;
             }
         }
     }
