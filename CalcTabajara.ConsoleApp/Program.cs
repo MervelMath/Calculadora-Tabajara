@@ -8,7 +8,7 @@ namespace CalcTabajara.ConsoleApp
         {
             while (true)
             {
-
+               
                 Console.WriteLine("Primeiro número:");
                 double num1 = Convert.ToDouble(Console.ReadLine());
 
@@ -19,7 +19,6 @@ namespace CalcTabajara.ConsoleApp
                 Console.WriteLine("Digite 2 para subtração: ");
                 Console.WriteLine("Digite 3 para divisão: ");
                 Console.WriteLine("Digite 4 para multiplicação: ");
-                Console.WriteLine("Digite 5 para sair: ");
 
 
 
@@ -36,39 +35,37 @@ namespace CalcTabajara.ConsoleApp
                 if (operacao == 5)
                     break;
 
-                double resultado = 0;
-                string operador = "";
+                double resultado;
 
-                switch (operacao)
-                {
-                    case 1:
-                        resultado = num1 + num2;
-                        operador = "+";
-                        break;
+            switch (operacao)
+            {
+                case 1:
+                    resultado = num1 + num2;
+                    operador = "+";
+                    break;
 
-                    case 2:
-                        resultado = num1 - num2;
-                        operador = "-";
-                        break;
+                case 2:
+                    resultado = num1 - num2;
+                    operador = "-";
+                    break;
 
-                    case 3:
-                        if (num2 != 0)
-                        {
-                            resultado = num1 / num2;
-                            operador = "/";
-                        }
-                        else
-                            Console.WriteLine("O divisor não pode ser zero.");
-                        break;
+                case 3:
+                    if (num2 != 0)
+                    {
+                        resultado = num1 / num2;
+                        operador = "/";
+                    }
+                    else
+                        Console.WriteLine("O divisor não pode ser zero.");
+                    break;
 
-                    case 4:
-                        resultado = num1 * num2;
-                        operador = "*";
-                        break;
-                }
-                Console.WriteLine($"Operação realizada: {num1} {operador} {num2} = {resultado}");
-
+                case 4:
+                    resultado = num1 * num2;
+                    operador = "*";
+                    break;
             }
+            Console.WriteLine($"Operação realizada: {num1} {operador} {num2} = {resultado}");
+
         }
     }
 }
