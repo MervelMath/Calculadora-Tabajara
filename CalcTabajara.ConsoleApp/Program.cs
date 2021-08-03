@@ -16,29 +16,38 @@ namespace CalcTabajara.ConsoleApp
             Console.WriteLine("Digite 4 para multiplicação: ");
             double operacao = Convert.ToDouble(Console.ReadLine());
 
-            double resultado;
+            double resultado = 0;
+            string operador = " ";
 
             switch (operacao)
             {
                 case 1:
                     resultado = num1 + num2;
+                    operador = "+";
                     break;
 
                 case 2:
                     resultado = num1 - num2;
+                    operador = "-";
                     break;
 
                 case 3:
-                    if(num2 != 0)
-                    resultado = num1 / num2;
+                    if (num2 != 0)
+                    {
+                        resultado = num1 / num2;
+                        operador = "/";
+                    }
                     else
                         Console.WriteLine("O divisor não pode ser zero.");
                     break;
 
                 case 4:
                     resultado = num1 * num2;
+                    operador = "*";
                     break;
             }
+            Console.WriteLine($"Operação realizada: {num1} {operador} {num2} = {resultado}");
+
         }
     }
 }
