@@ -19,6 +19,7 @@ namespace CalcTabajara.ConsoleApp
                 Console.WriteLine("Digite 2 para subtração: ");
                 Console.WriteLine("Digite 3 para divisão: ");
                 Console.WriteLine("Digite 4 para multiplicação: ");
+                Console.WriteLine("Digite 5 para sair: ");
 
                 double operacao = Convert.ToDouble(Console.ReadLine());
 
@@ -32,8 +33,8 @@ namespace CalcTabajara.ConsoleApp
                 if (operacao == 5)
                     break;
 
-                double resultado;
-
+                double resultado = 0;
+                string operador = "";
             switch (operacao)
             {
                 case 1:
