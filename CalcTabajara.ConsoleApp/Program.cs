@@ -21,6 +21,9 @@ namespace CalcTabajara.ConsoleApp
                 Console.WriteLine("Digite 4 para multiplicação: ");
                 Console.WriteLine("Digite 5 para sair: ");
 
+
+
+
                 double operacao = Convert.ToDouble(Console.ReadLine());
 
                 if (operacao != 1 || operacao != 2 || operacao != 3 || operacao != 4 || operacao != 5)
