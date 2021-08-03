@@ -21,6 +21,10 @@ namespace CalcTabajara.ConsoleApp
                 case 1:
                     resultado = num1 + num2;
                     break;
+
+                case 2:
+                    resultado = num1 - num2;
+                    break;
             }
         }
     }
