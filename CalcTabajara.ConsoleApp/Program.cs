@@ -28,6 +28,9 @@ namespace CalcTabajara.ConsoleApp
                     continue;
                 }
 
+                if (operacao == 5)
+                    break;
+
                 double resultado;
 
                 switch (operacao)
