@@ -6,18 +6,33 @@ namespace CalcTabajara.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Primeiro número:");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Segundo número:");
-            double num2 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Digite 1 para soma: ");
-            Console.WriteLine("Digite 2 para subtração: ");
-            Console.WriteLine("Digite 3 para divisão: ");
-            Console.WriteLine("Digite 4 para multiplicação: ");
-            double operacao = Convert.ToDouble(Console.ReadLine());
+            while (true)
+            {
+               
+                Console.WriteLine("Primeiro número:");
+                double num1 = Convert.ToDouble(Console.ReadLine());
 
-            double resultado = 0;
-            string operador = " ";
+                Console.WriteLine("Segundo número:");
+                double num2 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Digite 1 para soma: ");
+                Console.WriteLine("Digite 2 para subtração: ");
+                Console.WriteLine("Digite 3 para divisão: ");
+                Console.WriteLine("Digite 4 para multiplicação: ");
+
+                double operacao = Convert.ToDouble(Console.ReadLine());
+
+                if (operacao != 1 || operacao != 2 || operacao != 3 || operacao != 4 || operacao != 5)
+                {
+                    Console.WriteLine("Você digitou uma opção invalida, tente novamente");
+                    Console.ReadLine();
+                    continue;
+                }
+
+                if (operacao == 5)
+                    break;
+
+                double resultado;
 
             switch (operacao)
             {
